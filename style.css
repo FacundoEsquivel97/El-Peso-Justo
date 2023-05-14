@@ -1,23 +1,79 @@
+*{
+  padding: 0px;
+  margin: 0px
+}
+.pokemonContainer {
+  display:flex;
+  flex-direction: column;
+}
 .pokeName{
   text-transform: uppercase ;
-  font-size: 30px;
+  font-size: 40px;
   text-align: center
 }
 .pokeImg {
-  margin:0px 8vw;
-	  max-width: 80vw;
-	}
+padding: 1rem;
+}
+.pokeType {
+  margin: 0.5rem 1rem;
+  display: flex;
+  text-transform: uppercase;
+}
+.typeBox {
+  margin-right: 1rem;
+}
+.pokeHeight {
+  margin: 0.5rem 1rem;
+}
 .inputForm {
-  display:grid;
-  grid-template-columns: repeat(3,1fr);
+  margin: 0.5rem 1rem;
+  display:flex;
   gap: 0.5rem;
 }
-.inputWeight {
-  width: 100%;
-}
-.inputHeight {
-  width:100%;
+.inputWeight{
+  width: 50px;
 }
 .inputSubmit{
   background:none;
+}
+.info {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.textBox {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 0.5rem;
+  width: fit-content;
+}
+.buttons {
+display: flex;
+gap: 1rem;
+}
+button{
+  background: none;
+}
+@media (min-width: 900px) {
+  .main {
+    max-width: 900px;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+  }
+  .pokeImg {
+    max-height: 300px;
+  }
+  .pokemonContainer2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .info {
+    max-width: 900px;
+    margin: auto;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
