@@ -1,0 +1,23 @@
+.pokeName{
+  text-transform: uppercase ;
+  font-size: 30px;
+  text-align: center
+}
+.pokeImg {
+  margin:0px 8vw;
+	  max-width: 80vw;
+	}
+.inputForm {
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 0.5rem;
+}
+.inputWeight {
+  width: 100%;
+}
+.inputHeight {
+  width:100%;
+}
+.inputSubmit{
+  background:none;
+}
