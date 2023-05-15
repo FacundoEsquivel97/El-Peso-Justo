@@ -36,7 +36,7 @@ document.addEventListener( "DOMContentLoaded",()=>{
       pokemon.types.forEach((type)=>{
         let typeBox = document.createElement('div')
         typeBox.textContent = type.type.name
-        typeBox.className = 'typeBox'
+        typeBox.className = 'typeBox nes-container is-rounded'
         pokeType.appendChild(typeBox)
       })
     pokeName.textContent = pokemon.name;
@@ -78,6 +78,8 @@ document.addEventListener( "DOMContentLoaded",()=>{
   buttonReload.addEventListener('click',()=>{
     location.reload()
   })
+
+  document.querySelector('.inputForm').addEventListener('submit',(e)=>{e.preventDefault()})
   hp.value = count;
   renderPokemon()
 })

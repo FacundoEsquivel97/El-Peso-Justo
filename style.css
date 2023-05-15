@@ -5,8 +5,8 @@
 }
 .pokeName{
   text-transform: uppercase ;
-  font-size: 40px;
-  text-align: center
+  font-size: calc(1em + 5vw) ;
+  text-align: center;
 }
 .pokeImg {
 max-width: 100vw;
@@ -17,7 +17,8 @@ max-width: 100vw;
   text-transform: uppercase;
 }
 .typeBox {
-  margin-right: 1rem;
+  margin-right: 1rem !important;
+  padding: 0.2rem !important;
 }
 .pokeHeight {
   margin: 0.5rem 0rem;
@@ -86,6 +87,10 @@ gap: 1rem;
     display: flex;
     justify-content: center;
   }
+  .pokeName{
+    font-size: calc(1em + 1vw) ;
+  }
+  
   .pokeImg {
     max-height: 300px;
   }
