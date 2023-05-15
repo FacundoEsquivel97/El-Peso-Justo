@@ -8,12 +8,10 @@
 <script src="app.js"></script>
 </head>
 <body>
+<div class="pokeName"></div>
 <article class="main">
+  <img class="pokeImg">
   <div class="pokemonContainer">
-    <div class="pokeName"></div>
-    <img class="pokeImg">
-  </div>
-  <div class="pokemonContainer2">
     <div class="pokeType"></div>
     <div class="pokeHeight"> ALTURA : <strong>120</strong> CENTIMETROS
     </div>
@@ -25,8 +23,9 @@
     </form>
   </div>
 </article>
-<section class="info">
-  <div class="textBox"> Ingresa el peso del pokemon! </div>
-</section>
+<form class="info">
+  <label class="textBox"> Ingresa el peso del pokemon! </label>
+  <input type="submit" value="Recargar" />
+</form>
 </body>
 </html>

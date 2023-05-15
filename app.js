@@ -45,7 +45,10 @@ document.addEventListener( "DOMContentLoaded",()=>{
     inputSubmit.addEventListener('click',(e)=>{
       e.preventDefault()
       let result = inputWeight.value - peso;
-      if (result == 0) {alert('you win')} else {
+      if (result == 0) {
+        mostrarAlerta('Haz acertado! El peso de este pokemon es ' + peso + 'kg.')
+   
+      } else {
         mostrarAlerta('Haz fallado por ' + Math.abs(redondearDecimales(result,2)) + 'kg. El peso de este pokemon es ' + peso + 'kg.')
       }
     })
