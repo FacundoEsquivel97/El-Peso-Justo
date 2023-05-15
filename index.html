@@ -4,6 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>El peso justo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
 <link rel="stylesheet" type="text/css" href="style.css" />
 <script src="app.js"></script>
 </head>
@@ -13,20 +17,24 @@
   <img class="pokeImg">
   <div class="pokemonContainer">
     <div class="pokeType"></div>
-    <div class="pokeHeight"> ALTURA : <strong>120</strong> CENTIMETROS
+    <div class="pokeHeight"> ALTURA : <strong>120</strong> METRO/S
     </div>
     <form class="inputForm">
-      <label>PESO :</label>
+      PESO :
       <input class="inputWeight" type="number">
-      <label>KILOS</label>
-      <input class="inputSubmit" type="submit">
-    </form>
+      KILOS
+      </form>
+      <button type="button" class="nes-btn is-primary inputSubmit">Enviar</button>
+    <button type="button" class="nes-btn is-primary buttonNext hide">Siguiente</button>
+    <button type="button" class="nes-btn is-primary buttonReload hide">Recargar</button>
+
   </div>
 </article>
 <section class="info">
-  <div class="textBox"> Ingresa el peso del pokemon! </div>
-  <button class="buttonNext hide"> siguiente </button>
-</section>
+  <div class="nes-container is-rounded textBox">
+  </div>
+  <progress class="nes-progress is-primary barra" value="100" max="100"></progress>
+  </section>
 <div class="hp"></div>
 </body>
 </html>

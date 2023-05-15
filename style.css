@@ -1,6 +1,7 @@
 *{
   padding: 0px;
-  margin: 0px
+  margin: 0px;
+  font-family: 'Press Start 2P', cursive;
 }
 .pokeName{
   text-transform: uppercase ;
@@ -11,7 +12,7 @@
 max-width: 100vw;
 }
 .pokeType {
-  margin: 0.5rem 1rem;
+  margin: 0.5rem 0rem;
   display: flex;
   text-transform: uppercase;
 }
@@ -19,18 +20,31 @@ max-width: 100vw;
   margin-right: 1rem;
 }
 .pokeHeight {
-  margin: 0.5rem 1rem;
+  margin: 0.5rem 0rem;
 }
 .inputForm {
-  margin: 0.5rem 1rem;
+  margin: 0.5rem 0rem;
   display:flex;
   gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .inputWeight{
-  width: 50px;
+  width: 65px;
 }
-.inputSubmit{
-  background:none;
+.inputSubmit {
+  margin: 0.5rem 0rem;
+  width: 100%;
+}
+
+.buttonNext {
+  margin: 0.5rem 0rem;
+  width: 100%;
+}
+
+.buttonReload {
+  margin: 0.5rem 0rem;
+  width: 100%;
 }
 .info {
   margin: 1rem;
@@ -38,12 +52,8 @@ max-width: 100vw;
   flex-direction: column;
   gap: 1rem;
 }
-.textBox {
-  border: 1px solid black;
-  border-radius: 15px;
-  padding: 0.5rem;
-  max-width: 565px;
-  width: fit-content;
+.textBox{
+  max-width: 700px;
 }
 .buttons {
 display: flex;
@@ -52,6 +62,15 @@ gap: 1rem;
 
 .hide {
   display: none;
+}
+.hp {
+  margin: 1rem;
+}
+.barra {
+  width: 98%;
+}
+.pokemonContainer{
+  margin: 1rem;
 }
 @media (min-width: 900px) {
   .main {
@@ -71,7 +90,10 @@ gap: 1rem;
   .info {
     max-width: 900px;
     margin: auto;
-    flex-direction: row;
     justify-content: center;
+    align-items: center;
+  }
+  .hp {
+    text-align: center;
   }
 }
