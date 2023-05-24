@@ -3,9 +3,9 @@
 
 
 
-En esto juego se debe adivinar el peso del Pokémon mostrado en pantalla! 
+En este juego se debe adivinar el peso del Pokémon mostrado en pantalla! 
 
-Deployd: https://elpesojusto-pokemon.netlify.app
+Deploy: https://elpesojusto-pokemon.netlify.app
 
 # Descripción
 
